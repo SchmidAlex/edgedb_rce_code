@@ -8,7 +8,7 @@ This is a small script to exploit the RCE vulnerability in pickle of edgedb.
 
 The vulnerability is in the pickle.loads() function, which executes a command when you provide an os.system command as object.
 
-The pickle.loads() which this code uses is found under /edb/server/compiler/compiler_pool/server.py on line 433
+The pickle.loads() which this code uses is found under /edb/server/compiler_pool/server.py on line 433
 
 Github (vulnerable version):  [https://github.com/edgedb/edgedb/tree/25edd1dd5d4ac2dab80f06e1b6f8f47e167a3b90](https://github.com/edgedb/edgedb/tree/25edd1dd5d4ac2dab80f06e1b6f8f47e167a3b90)
 
